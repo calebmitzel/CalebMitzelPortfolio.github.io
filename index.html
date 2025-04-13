@@ -9,6 +9,72 @@
 		<title>Caleb Mitzel Analytics Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+				<style>
+			/* Default layout for larger screens (Desktop) */
+			#pictextcont .row {
+    display: flex;
+    justify-content: flex-start; /* Align the items to the left */
+    align-items: center; /* Vertically align the image and text */
+    gap: 10px; /* Adjust the gap between image and text */
+}
+
+#pictextcont .col-4 {
+    flex: 0 0 auto; /* Ensure the image has its natural width */
+    max-width: 40%; /* Control the width of the image column */
+}
+
+#pictextcont .col-8 {
+    flex: 1; /* Allow the text column to take up the remaining space */
+}
+
+/* Image scaling for responsiveness */
+#pictextcont .col-4 img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any unwanted space below the image */
+    margin: 0; /* Remove margin */
+}
+
+/* Text adjustments */
+#pictextcont .col-8 h1 {
+    font-size: 2.5em; /* Larger text for desktop */
+    margin-top: 0; /* Remove unnecessary top margin */
+    margin-bottom: 0; /* Remove unnecessary bottom margin */
+}
+
+#pictextcont .col-8 p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 0; /* Remove unnecessary top margin */
+    margin-bottom: 0; /* Remove unnecessary bottom margin */
+}
+
+/* Mobile-specific layout changes */
+@media (max-width: 768px) {
+    /* Stack the image and text vertically on mobile */
+    #pictextcont .row {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+    }
+
+    /* Ensure image scales properly and has space below it */
+    #pictextcont .col-4 img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px; /* Space below the image */
+    }
+
+    /* Adjust text size and padding for mobile */
+    #pictextcont .col-8 h1 {
+        font-size: 1.8em;
+    }
+
+    #pictextcont .col-8 p {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+		</style>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
