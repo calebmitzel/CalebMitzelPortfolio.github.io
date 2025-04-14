@@ -5,184 +5,165 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Caleb Mitzel Analytics Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-				<style>
-			/* Default layout for larger screens (Desktop) */
+<head>
+	<title>Caleb Mitzel Analytics Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<style>
+		/* Default layout for larger screens (Desktop) */
+		#pictextcont .row {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 20px;
+		}
+
+		#pictextcont .col-4 {
+			flex: 0 0 auto;
+			max-width: 40%;
+		}
+
+		#pictextcont .col-8 {
+			flex: 1;
+		}
+
+		#pictextcont .col-4 img {
+			width: 100%;
+			height: auto;
+			display: block;
+			border-radius: 50%; /* Optional: circular image */
+		}
+
+		/* Text styling */
+		#pictextcont .col-8 h1 {
+			font-size: 2.5em;
+			margin: 0.5em 0 0.2em;
+		}
+
+		#pictextcont .col-8 p {
+			font-size: 1.2em;
+			line-height: 1.6;
+			margin: 0.5em 0;
+		}
+
+		/* Mobile-specific layout */
+		@media (max-width: 768px) {
 			#pictextcont .row {
-    display: flex;
-    justify-content: flex-start; /* Align the items to the left */
-    align-items: center; /* Vertically align the image and text */
-    gap: 10px; /* Adjust the gap between image and text */
-}
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+			}
 
-#pictextcont .col-4 {
-    flex: 0 0 auto; /* Ensure the image has its natural width */
-    max-width: 40%; /* Control the width of the image column */
-}
+			#pictextcont .col-4 {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				margin-bottom: 20px;
+			}
 
-#pictextcont .col-8 {
-    flex: 1; /* Allow the text column to take up the remaining space */
-}
+			#pictextcont .col-4 img {
+				max-width: 200px;
+				height: auto;
+				border-radius: 50%;
+			}
 
-/* Image scaling for responsiveness */
-#pictextcont .col-4 img {
-    width: 100%; /* Make image responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove any unwanted space below the image */
-    margin: 0; /* Remove margin */
-}
+			#pictextcont .col-8 {
+				padding: 0 15px;
+			}
 
-/* Text adjustments */
-#pictextcont .col-8 h1 {
-    font-size: 2.5em; /* Larger text for desktop */
-    margin-top: 0; /* Remove unnecessary top margin */
-    margin-bottom: 0; /* Remove unnecessary bottom margin */
-}
+			#pictextcont .col-8 h1 {
+				font-size: 1.8em;
+				margin-top: 0;
+			}
 
-#pictextcont .col-8 p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-top: 0; /* Remove unnecessary top margin */
-    margin-bottom: 0; /* Remove unnecessary bottom margin */
-}
+			#pictextcont .col-8 p {
+				font-size: 1em;
+				margin-top: 0.8em;
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
 
-/* Mobile-specific layout changes */
-@media (max-width: 768px) {
-    /* Stack the image and text vertically on mobile */
-    #pictextcont .row {
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center content */
-    }
-
-    /* Ensure the image scales properly */
-    #pictextcont .col-4 img {
-        width: 100%; /* Make the image fully responsive */
-        height: auto; /* Maintain the aspect ratio */
-        margin-bottom: 20px; /* Add space below the image */
-    }
-
-    /* Adjust text size and padding for mobile */
-    #pictextcont .col-8 {
-        padding-left: 15px; /* Add some padding for text */
-        padding-right: 15px; /* Add padding on both sides */
-    }
-
-    #pictextcont .col-8 h1 {
-        font-size: 1.8em; /* Adjust header size for mobile */
-    }
-
-    #pictextcont .col-8 p {
-        font-size: 1em; /* Adjust paragraph size for mobile */
-        padding: 10px; /* Add some padding for better readability */
-    }
-}
-		</style>
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-		<!-- Home -->
-		<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/headshot zoom.jpg" alt="" /></span>
-							<style>
-								div {
-								  margin:auto;
-								}
-								</style>	
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>										
-								<h1>Hi. I'm <strong>Caleb</strong>.</h1>
-							</header>
-							<p>Welcome to my data analytics portfolio. 
-								<br></br>
-								My work features the blending of 10 years of healthcare experience with analytics expertise to provide actionable insight to meet unique consumer needs. 
-								</p>
-						</div>
-					</div>
+	<!-- Home -->
+	<article id="top" class="wrapper style1">
+		<div class="container" id="pictextcont">
+			<div class="row">
+				<div class="col-4 col-5-large col-12-medium">
+					<span class="image"><img src="images/headshot zoom.jpg" alt="Caleb Mitzel headshot" /></span>
 				</div>
-			</article>
-
-		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
+				<div class="col-8 col-7-large col-12-medium">
 					<header>
-						<h2>Here is a collection of my full work. </h2>
-						<p>From <strong>database engineering</strong> to <strong>regression modeling</strong> to building <strong>dashboard visualizations</strong>. </p>
+						<h1>Hi. I'm <strong>Caleb</strong>.</h1>
 					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="center"><a href="https://github.com/calebmitzel/SQL"><img src="images/database icon.png" alt="SQL" style="width:200px;height:200px"></span></a>
-								<h3>SQL</h3>
-								<p>Database design, data standardization, and ETL pipeline creation. </p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="center"><a href="https://github.com/calebmitzel/Analysis"><img src="images/python icon.png" alt="Python 3" style="width:200px;height:200px"></span></a>
-								<h3>Python</h3>
-								<p>Data cleaning, machine learning, and neural netowrk architecture. </p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="center"><a href="https://github.com/calebmitzel/Tableau"><img src="images/tableau icon.png" alt="Tableau" style="width:200px;height:200px"></span></a>
-								<h3>Tableau</h3>
-								<p>Interactive dashboards ready for client consumption. </p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<a href="mailto:caleb.e.mitzel@gmail.com" class="button large scrolly">Send me an email</a>
-					</footer>
+					<p>Welcome to my data analytics portfolio.</p>
+					<p>My work features the blending of 10 years of healthcare experience with analytics expertise to provide actionable insight to meet unique consumer needs.</p>
 				</div>
-			</article>
+			</div>
+		</div>
+	</article>
 
-		<!-- Portfolio -->
-
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-							<h3>Find me online</h3>
-							<ul class="social">
-								<li><a href="https://www.linkedin.com/in/calebmitzel" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/calebmitzel" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://public.tableau.com/app/profile/caleb.mitzel/vizzes" class="icon fa-chart-bar"><span class="label">Tableau</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+	<!-- Work -->
+	<article id="work" class="wrapper style2">
+		<div class="container">
+			<header>
+				<h2>Here is a collection of my full work.</h2>
+				<p>From <strong>database engineering</strong> to <strong>regression modeling</strong> to building <strong>dashboard visualizations</strong>.</p>
+			</header>
+			<div class="row aln-center">
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<span class="center"><a href="https://github.com/calebmitzel/SQL"><img src="images/database icon.png" alt="SQL" style="width:200px;height:200px"></a></span>
+						<h3>SQL</h3>
+						<p>Database design, data standardization, and ETL pipeline creation.</p>
+					</section>
 				</div>
-			</article>
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<span class="center"><a href="https://github.com/calebmitzel/Analysis"><img src="images/python icon.png" alt="Python 3" style="width:200px;height:200px"></a></span>
+						<h3>Python</h3>
+						<p>Data cleaning, machine learning, and neural network architecture.</p>
+					</section>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<span class="center"><a href="https://github.com/calebmitzel/Tableau"><img src="images/tableau icon.png" alt="Tableau" style="width:200px;height:200px"></a></span>
+						<h3>Tableau</h3>
+						<p>Interactive dashboards ready for client consumption.</p>
+					</section>
+				</div>
+			</div>
+			<footer>
+				<a href="mailto:caleb.e.mitzel@gmail.com" class="button large scrolly">Send me an email</a>
+			</footer>
+		</div>
+	</article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Contact -->
+	<article id="contact" class="wrapper style4">
+		<h3>Find me online</h3>
+		<ul class="social">
+			<li><a href="https://www.linkedin.com/in/calebmitzel" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+			<li><a href="https://github.com/calebmitzel" class="icon brands fa-github"><span class="label">Github</span></a></li>
+			<li><a href="https://public.tableau.com/app/profile/caleb.mitzel/vizzes" class="icon fa-chart-bar"><span class="label">Tableau</span></a></li>
+		</ul>
+		<hr />
+		<footer>
+			<ul id="copyright">
+				<li>&copy; Untitled. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</footer>
+	</article>
 
-	</body>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
